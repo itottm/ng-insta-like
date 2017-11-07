@@ -4,17 +4,17 @@
       <a class="navbar-brand" href="#">DemoGram</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">All Posts</a></li>
-      <li><a href="#">Following</a></li>
-      <li><a href="#">Favorites</a></li>
-      <li><a href="#">My Posts</a></li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="/allposts">All Posts</a></li>
+      <li routerLinkActive="active"><a routerLink="/following">Following</a></li>
+      <li routerLinkActive="active"><a routerLink="/favorites">Favorites</a></li>
+      <li routerLinkActive="active"><a routerLink="/myposts">My Posts</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Sign up</a></li>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Logout</a></li>
+      <li routerLinkActive="active"><a routerLink="/signup">Sign up</a></li>
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li><a routerLink="">Logout</a></li>
     </ul>
   </div>
 </nav>
